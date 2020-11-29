@@ -1,0 +1,26 @@
+managed; // implementation in class zbp_i_rishi_poinfo_m unique;
+
+define behavior for ZI_RISHI_POINFO_M //alias <alias_name>
+persistent table ZRISHI_POINFO
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  field(readonly) po_doc;
+  create;
+  update;
+  delete;
+  association _Items { create; }
+}
+
+define behavior for ZI_RISHI_POITEMS_M //alias <alias_name>
+persistent table ZRISHI_POITEMS
+lock dependent by _Header
+//authorization dependent by <association>
+//etag master <field_name>
+{
+  field(readonly) po_document;
+  update;
+  delete;
+  association _Header;
+}

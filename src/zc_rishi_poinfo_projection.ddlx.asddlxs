@@ -1,0 +1,28 @@
+@Metadata.layer: #CORE
+annotate view ZC_RISHI_POINFO_Projection
+    with 
+{
+@UI.facet: [
+{
+
+id:'Purchaseinfo',
+purpose: #STANDARD,
+type:#IDENTIFICATION_REFERENCE,
+label: 'Purchase Info'
+ }
+
+]
+  @UI.identification: [{ position: 10,label: 'Purchase Desc' }]
+  po_description;
+  @UI.identification: [{ position: 20,label: 'Purchase Status' }]
+  postatus;
+  @UI.identification: [{ position: 30,label: 'Purchase Priority' }]
+  popriority;
+  @UI.identification: [{ position: 40,label: 'Company Code' }]
+  compcode;
+  @UI.identification: [{ position: 50,label: 'Total Price' }]
+  total_poprice;
+  @UI.identification: [{ position: 60,label: 'Currency' }]
+  curkey;
+    
+}

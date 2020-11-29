@@ -1,0 +1,7 @@
+@EndUserText.label: 'Purchase Report'
+define service Zrishi_sd_purchaseinfo_v1 {
+  expose ZI_RISHI_POINFO_M;
+  expose ZI_RISHI_POITEMS_M;
+  expose ZC_RISHI_POINFO_Projection;
+  expose ZC_RISHI_POITEMS_M;
+}
