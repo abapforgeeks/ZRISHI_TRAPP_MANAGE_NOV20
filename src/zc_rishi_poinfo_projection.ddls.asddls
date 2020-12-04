@@ -1,6 +1,7 @@
 @EndUserText.label: 'Projection on Purchase Info root view'
 @AccessControl.authorizationCheck: #CHECK
 @Metadata.allowExtensions: true
+@ObjectModel.semanticKey: ['po_doc']
 define root view entity ZC_RISHI_POINFO_Projection as projection on ZI_RISHI_POINFO_M {
     key po_doc,
     po_description,

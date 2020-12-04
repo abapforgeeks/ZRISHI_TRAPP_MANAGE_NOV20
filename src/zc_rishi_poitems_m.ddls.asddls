@@ -1,5 +1,7 @@
 @EndUserText.label: 'Managed Scenario for PO ITems'
 @AccessControl.authorizationCheck: #CHECK
+@Metadata.allowExtensions: true
+@ObjectModel.semanticKey: ['po_document','po_item']
 define view entity ZC_RISHI_POITEMS_M as projection on ZI_RISHI_POITEMS_M {
     key po_document,
     key po_item,
